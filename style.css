@@ -1,0 +1,22 @@
+*{
+    margin:0;
+    padding: 0;
+}
+html{
+    box-sizing: border-box;
+}
+body{
+    /* background-image: url("casey-horner-4rDCa5hBlCs-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; */
+    display: flex;
+    flex: auto;
+    justify-content: stretch;
+    align-items: stretch;
+    max-height: 100vh;
+    overflow: hidden;
+}
+#Img-Logo .Image-Background{
+    width: 35vw;
+    height: 95vh;
+}
