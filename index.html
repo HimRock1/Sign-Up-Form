@@ -7,6 +7,9 @@
     <title>Sign Up</title>
     <link rel = "icon" type = "image/png" href = "coding.png" alt="Seo and web icons created by Freepik - Flaticon">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="Img-Logo">
@@ -17,7 +20,7 @@
         </div>
     </div>
     <div id="contents-box">
-        <div><p class="quote">This is not a real online service! You know need something like this in our life to help you realize
+        <div class="content-text"><p class="quote">This is not a real online service! You know need something like this in our life to help you realize
             your deepest dreams. 
             <p class="Sign-up-Quote">Sign up now to get started</p>
             <p>You <i>know</i> you want to</p>
@@ -25,39 +28,41 @@
         <form class="form-body">
             <fieldset>
                 <legend>Let's do this</legend>
-                <p>
-                    <label for="f-name">FIRST NAME</label>
-                    <input type="text" name="first-name" id="f-name">
-                    <span></span>
-                </p>
-                <p>
-                    <label for="l-name">LAST NAME</label>
-                    <input type="text" name="last-name" id="l-name">
-                    <span></span>
-                </p>
-                <p>
-                    <label for="email">EMAIL</label>
-                    <input type="email" name="User-email" id="email">
-                    <span></span>
-                </p>
-                <p>
-                    <label for="ph-name">PHONE NUMBER</label>
-                    <input type="text" name="Phone-no" id="ph-num">
-                    <span></span>
-                </p>
-                <p>
-                    <label for="password">PASSWORD</label>
-                    <input type="password" name="password" id="password">
-                    <span></span>
-                </p>
-                <p>
-                    <label for="confirm-password">CONFIRM PASSWORD</label>
-                    <input type="password" name="confirm-password" id="confirm-password">
-                    <span></span>
-                </p>
+                <div class="form-elements">
+                    <p>
+                        <label for="f-name">FIRST NAME</label>
+                        <input type="text" name="first-name" id="f-name" required>
+                        <span></span>
+                    </p>
+                    <p>
+                        <label for="l-name">LAST NAME</label>
+                        <input type="text" name="last-name" id="l-name">
+                        <span></span>
+                    </p>
+                    <p>
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="User-email" id="email" required>
+                        <span></span>
+                    </p>
+                    <p>
+                        <label for="ph-name">PHONE NUMBER</label>
+                        <input type="text" name="Phone-no" id="ph-num">
+                        <span></span>
+                    </p>
+                    <p>
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password" required>
+                        <span></span>
+                    </p>
+                    <p>
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirm-password" id="confirm-password" required>
+                        <span></span>
+                    </p>
+                </div>
             </fieldset>
+            <div class="btn"><button type="submit">Create Account</button></div>
         </form>
-        <button type="submit">Create Account</button>
         <div>Already have an account?<a href="http://www.google.com">Log in</a></div>
     </div>
     <div class="footer">This Project is contributed by Himjyoti Sarma</div>

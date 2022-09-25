@@ -9,7 +9,9 @@ html{
     font-family: 'Norse-Bold';
     src: url(./Norse-Bold.otf);
 }
+
 body{
+    font-family: 'Ubuntu', sans-serif;
     display: grid;
     height: 97vh;
     overflow: hidden;
@@ -31,6 +33,9 @@ body{
     grid-column: span 2;
     grid-row: span 2;
     padding:min(20%,50px);
+    flex-flow: column wrap;
+    justify-content: space-between;
+    font-family: 'Ubuntu', sans-serif;
 }
 #Img-Logo .Logos{
     box-sizing: border-box;
@@ -59,7 +64,7 @@ body{
 
  #Img-Logo .Logos .Logo-name{
     font-family: 'Norse-Bold',sans-serif;
-    font-size: 6rem;
+    font-size:calc(5vw + 5vh);
     color: azure;
 }
 /* #Img-Logo .Logos .odin-logo{
@@ -67,18 +72,94 @@ body{
     height: min(50%,100px)
 }
  */
+ .content-text{
+    font-weight: 700;
+ }
  .form-body{
-    
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: stretch;
-    align-items: center;
+    align-items: stretch;
+
     
  }
 fieldset {
     padding: 10px 30px;
+    height: max(50%,35vh);
+    margin:2rem 0;
 }
 legend {
     color: white;
     background: black;
     padding: 5px 10px;
+}
+.form-elements{
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+.form-elements p{
+    font-family: inherit;
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+    height: 30px;
+}
+input {
+    box-shadow: inset 1px 1px 3px #ccc;
+    border-radius: 5px;
+  }
+
+  input:hover, input:focus {
+    background-color: #eee;
+  }
+
+  input + span {
+    position: relative;
+  }
+
+  input:required + span::after {
+    font-size: 0.7rem;
+    position: absolute;
+    content: "required";
+    color: white;
+    background-color: black;
+    padding: 5px 10px;
+    top: -26px;
+    left: -70px;
+  }
+
+  input + span::before {
+    position: absolute;
+    right: -20px;
+    top: 5px;
+  }
+
+  input:invalid {
+    border: 2px solid red;
+  }
+
+  input:invalid + span::before {
+    content: '✖';
+    color: red;
+  }
+
+  input:valid + span::before {
+    content: '✓';
+    color: green;
+  }
+
+.btn{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    align-self: flex-start;
+    width: clamp(200px,30%,400px);
+    height: clamp(75px,15%,200px);
+    border-radius: 1rem;
+    font-size: 1.20rem;
+    
 }
